@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aurinko</title>
+
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.rotate-background {
+    height: 1000vh;
+    width: 1000vw;
+    left: -300vw;
+    top: -300vh; 
+    background-image: linear-gradient(to bottom, #9cc3fd,#73abff,  #09316d, #020820);
+    background-position: center;
+    z-index: 0;
+    position: absolute;
+    animation: around 40s linear infinite;
+    transform-origin: 50%;
+    overflow: hidden;
+}
+
+.around {
+    animation: around 40s linear infinite;
+    height: 150vh;
+}
+
+@keyframes around {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
+
+.sun {
+    background:yellow;
+    height: 170px;
+    width: 170px; 
+    position: relative;
+    top: 200px;
+    left: 40%;
+    border-radius: 50%; 
+    animation: rotation 20s linear infinite;
+}
+
+.shine {
+    background-image: linear-gradient(to bottom, yellow, rgba(0, 0, 0, 0));
+    height: 200px; 
+    width: 15px;
+    position: absolute;
+
+
+}
+
+.ray1 {
+    transform-origin: 0%;
+    transform: rotate(30deg); 
+    top: 140px;
+    left: -5px;
+}
+
+.ray2 {
+    transform-origin: 0%;
+    transform: rotate(60deg); 
+    top: 80px;
+    left: -70px;
+}
+
+.ray3 {
+    transform-origin: 0%;
+    transform: rotate(90deg); 
+    left: -90px;
+    top: -10px;
+}
+
+.ray4 {
+    transform-origin: 0%;
+    transform: rotate(120deg); 
+    top: -90px;
+    left: -60px;
+}
+
+.ray5 {
+    transform-origin: 0%;
+    transform: rotate(150deg); 
+    top: -170px;
+    left: -10px;
+}
+
+.ray6 {
+    transform-origin: 0%;
+    transform: rotate(180deg); 
+    top: -180px;
+    left: 90px;
+}
+
+.ray7 {
+    transform-origin: 0%;
+    transform: rotate(210deg); 
+    top: -160px;
+    left: 180px;
+}
+
+.ray8 {
+    transform-origin: 0%;
+    transform: rotate(240deg); 
+    top: -95px;
+    left: 250px;
+}
+
+.ray9 {
+    transform-origin: 0%;
+    transform: rotate(270deg); 
+    left: 260px;
+}
+
+.ray10 {
+    transform-origin: 0%;
+    transform: rotate(300deg); 
+    top: 80px;
+    left: 230px;
+}
+
+.ray11 {
+    transform-origin: 0%;
+    transform: rotate(330deg); 
+    top: 140px;
+    left: 170px;
+}
+
+.ray12 {
+    transform-origin: 0%;
+    top: 165px;
+    left: 80px;
+}
+
+@keyframes rotation {
+    from {transform: rotate(0deg); }
+    to {transform: rotate(360deg);}
+}
+
+.moon {
+    position: relative; 
+    top: 1500px;
+    transform: rotate(-35deg);
+    left: 40%; 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    box-shadow: 20px 20px 0 0 #ffffff;
+}
+
+
+
+.light {
+
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+    <div class="rotate-background"></div>
+    
+    <div class="around">
+
+
+        <div class="sun">
+            <div class="shine ray1"></div>
+            <div class="shine ray2"></div> 
+            <div class="shine ray3"></div>
+            <div class="shine ray4"></div>
+            <div class="shine ray5"></div>
+            <div class="shine ray6"></div>
+            <div class="shine ray7"></div>
+            <div class="shine ray8"></div>
+            <div class="shine ray9"></div>
+            <div class="shine ray10"></div>
+            <div class="shine ray11"></div>
+            <div class="shine ray12"></div>
+        </div>
+    
+        <div class="moon"> </div>
+    
+    </div>
+
+
+</body>
+</html>
