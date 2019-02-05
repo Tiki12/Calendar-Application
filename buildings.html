@@ -7,6 +7,9 @@
     <title>Buildings</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
+
     * {
         box-sizing: border-box;
         margin: 0; 
@@ -14,15 +17,16 @@
         font-family: 'Courier New', Courier, monospace;
     }
 
-    .date {
+
+    #day {
+        font-size: 160px;
+        font-family: 'Archivo Black', sans-serif;
+        font-weight: 400;
         text-align: center;
         position: absolute;
         top: 100px;
-        left: 40%; 
-    }
-
-    .day {
-        font-size: 100px;
+        left: 43%; 
+        color: rgba(255,255,255,0.7);
     }
 
     .container {
@@ -142,7 +146,7 @@
     .doorwindow1 {
         height: 20px;
         width: 17px;
-        background-color: yellow;
+        background-color: #c4e7ff;
         position: absolute; 
         left: 5px;
         top: 5px;
@@ -152,7 +156,7 @@
     .doorwindow2 {
         height: 20px;
         width: 17px;
-        background-color: yellow;
+        background-color: #c4e7ff;
         position: absolute; 
         right: 5px;
         top: 5px;
@@ -209,7 +213,7 @@
     }
 
     .item {
-        background-color: yellow;
+        background-color: #c4e7ff;
         border-radius: 1.5px;
     }
 
@@ -303,7 +307,7 @@
 </head>
 <body>
     
-<h1 class="date"><span class="day">4.</span><br /> Helmikuuta <br /> 2019</h1>
+<h1 id="day"></h1>
 
 <div class="container">
     <div class="sky"></div>
@@ -570,6 +574,20 @@
 
     <div class="grass"></div>
 </div>
+
+<script>
+
+    function showDate() {
+        let day = new Date(); 
+        document.getElementById("day").innerHTML = day.getDate() + ".";
+    }
+
+    showDate();
+
+    let month; 
+
+
+</script>
 
 </body>
 </html>
