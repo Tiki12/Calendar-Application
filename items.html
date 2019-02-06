@@ -56,6 +56,99 @@
         }
 
 
+        .car {
+            position: absolute; 
+            top: 380px; 
+            right: 0;
+            animation: drive 5s infinite; 
+        }
+
+        @keyframes drive {
+            0% {
+                transform: translate3d(150px, 0px, 0px);
+                animation-timing-function: ease-in-out;  
+            }
+            100% {
+                transform: translate3d(-1200px, 0px, 0px);
+            }
+        }
+
+        .carbody {
+            width: 0; 
+            height: 0;
+            border-left: 30px solid transparent; 
+            border-right: 90px solid #555; 
+            border-bottom: 60px solid #555;
+            border-radius: 5px;
+        } 
+
+        .frontwindow {
+            width: 0; 
+            height: 0;
+            border-left: 12px solid transparent; 
+            border-right: 20px solid #96cbe0; 
+            border-bottom: 25px solid #96cbe0;
+            margin-left: -15px;
+            top: 5px;
+            position: relative;
+            border-radius: 0 2px 2px 0;
+        }
+
+        .window {
+            position: relative;
+            height: 25px; 
+            width: 25px;
+            background-color: #96cbe0;
+            top: -20px;
+            left: 25px;
+            border-radius: 2px;
+        }
+
+        .backwindow {
+            position: relative;
+            height: 25px; 
+            width: 25px;
+            background-color: #96cbe0;
+            top: -45px;
+            left: 57px;
+            border-radius: 2px;
+        }
+
+        .front {
+            width: 40px; 
+            height: 30px;
+            background-color: #555;
+            position: absolute; 
+            top: 30px;
+            left: -15px;
+            border-radius: 10px 2px 2px 2px;
+        }
+
+        .light {
+            position: relative; 
+            height: 10px; 
+            width: 5px; 
+            background-color: yellow;
+            top: 10px;
+        }
+
+        .tires {
+            position: relative;
+            top: -13px;
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, 30px);
+            grid-gap: 45px;
+        }
+
+        .tire {
+            height: 25px; 
+            width: 25px;
+            background-color: #ccc; 
+            border: 10px solid black;
+            border-radius: 50%;
+        }
+
+
     </style>
 
 </head>
@@ -69,7 +162,20 @@
         </div>
     </div>
 
-
+    <div class="car">
+        <div class="front">
+            <div class="light"></div>
+        </div>
+        <div class="carbody">
+            <div class="frontwindow"></div>
+            <div class="window"></div>
+            <div class="backwindow"></div>
+        </div>
+        <div class="tires">
+            <div class="tire"></div>
+            <div class="tire"></div>
+        </div>
+    </div>
 
 
     
