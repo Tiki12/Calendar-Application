@@ -980,19 +980,10 @@
     }
 
     showDate();
-
-    let month; 
-    let monthNumber;
+    let month;
+    let moonth =new Date().getMonth();
     let months = ["Tammikuuta", "Helmikuuta", "Maaliskuuta", "Huhtikuuta", "Toukokuuta", "Kesäkuuta", "Heinäkuuta", "Elokuuta", "Syyskuuta", "Lokakuuta", "Marraskuuta", "Joulukuuta"];
-    switch (new Date().getMonth()) {
-             monthNumber = case;
-            monthFunction()
-            function monthFunction(){
-            case monthNumber: 
-            month = months[monthNumber];
-            break;
-            }
-    }
+    month = months[moonth];
 
     if (month == "Joulukuuta") {
         document.getElementById("christmas").innerHTML = "Hyvää joulua!"; 
