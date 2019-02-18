@@ -982,43 +982,16 @@
     showDate();
 
     let month; 
+    let monthNumber;
+    var months = ["Tammikuuta", "Helmikuuta", "Maaliskuuta", "Huhtikuuta", "Toukokuuta", "Kesäkuuta", "Heinäkuuta", "Elokuuta", "Syyskuuta", "Lokakuuta", "Marraskuuta", "Joulukuuta"];
     switch (new Date().getMonth()) {
-        case 0: 
-            month = "Tammikuuta";
-            break; 
-        case 1: 
-            month = "Helmikuuta";
-            break; 
-        case 2: 
-            month = "Maaliskuuta";
-            break; 
-        case 3: 
-            month = "Huhtikuuta";
-            break; 
-        case 4: 
-            month = "Toukokuuta";
-            break; 
-        case 5: 
-            month = "Kesäkuuta";
-            break; 
-        case 6: 
-            month = "Heinäkuuta";
-            break; 
-        case 7: 
-            month = "Elokuuta";
-            break; 
-        case 8: 
-            month = "Syyskuuta";
-            break; 
-        case 9: 
-            month = "Lokakuuta";
-            break; 
-        case 10: 
-            month = "Marraskuuta";
-            break; 
-        case 11: 
-            month = "Joulukuuta";
-            break; 
+             monthNumber = case;
+            monthFunction()
+            function monthFunction(){
+            case monthNumber: 
+            month = months[monthNumber];
+            break;
+            }
     }
 
     if (month == "Joulukuuta") {
